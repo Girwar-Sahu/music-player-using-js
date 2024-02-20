@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Music Player</title>
+   <link rel="shortcut icon" href="favicon.ico?v2" type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+</head>
+<body>
+   <div class="container">
+      <div class="music-player">
+         <nav>
+            <div class="circle">
+               <img class="size" src="icons/left-angle.svg" alt="">
+            </div>
+            <div class="circle menu">
+               <img class="size" src="icons/bars.svg" alt="">
+            </div>
+         </nav>
+
+         <div class="song-img" id="songImg"></div>
+         <h2 id="title">_________</h2>
+         <p id="artist">_____</p>
+         <div class="ramge-container">
+            <input type="range" min="0" max="100" value="0" id="range">
+         </div>
+         <div class="song-time">
+            <span id="currentTime">00:00</span>
+            <span id="songDuration">00:00</span>
+         </div>
+         <div class="controls">
+            <div id="backwordBtn"><img class="size" src="icons/backword.svg" alt=""></div>
+            <div id="playBtn" class="play-btn pause">
+               <span></span>
+               <span></span>
+            </div>
+            <div id="forwordBtn"><img class="size" src="icons/forword.svg" alt=""></div>
+         </div>
+      </div>
+
+      <div class="playlist">
+         <h1>Music Playlist</h1>
+         <div class="ruler"></div>
+         <div class="song-list-container">
+            <!-- All songs dynamically added via js -->
+         </div>
+      </div>
+   </div>
+   
+   <script src="song.js"></script>
+</body>
+</html>
