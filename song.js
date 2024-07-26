@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', async () => {
    };
 
    const main = async () => {
-      const fetchSongs = await fetch("http://192.168.67.67:3000/songs/");
+      const fetchSongs = await fetch("http://127.0.0.1:3000/songs/");
       const response = await fetchSongs.text();
       const div = document.createElement("div");
       div.innerHTML = response;
